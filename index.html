@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>До и после уборки</title>
+<!--
+  Слайдер «До / После» без библиотек.
+  Как вставить на сайт:
+    1) скопируйте блок <style> (всё, что начинается с .ba) и <script> внизу страницы;
+    2) для каждой пары добавьте разметку:
+       <div class="ba" style="--pos:50%">
+         <img src="images/01-living-room_after.jpg"  alt="Гостиная после уборки">
+         <img src="images/01-living-room_before.jpg" alt="Гостиная до уборки" class="ba-before">
+         <span class="ba-label ba-label-before">До</span>
+         <span class="ba-label ba-label-after">После</span>
+         <span class="ba-handle" aria-hidden="true"></span>
+         <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+       </div>
+  Слева — «до», справа — «после». Тянуть можно мышью, пальцем или стрелками на клавиатуре.
+-->
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --card: #ffffff;
+    --text: #1d1d1b;
+    --muted: #6b6a66;
+    --accent: #2f7d6d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header { max-width: 1200px; margin: 0 auto; padding: 40px 16px 8px; }
+  h1 { margin: 0 0 6px; font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); }
+  main {
+    max-width: 1200px; margin: 0 auto; padding: 24px 16px 56px;
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    align-items: start;
+    grid-auto-flow: row dense; /* широкие карточки не оставляют дыр в сетке */
+  }
+  figure { margin: 0; background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.05); }
+  figure.wide { grid-column: span 2; }
+  @media (max-width: 760px) { figure.wide { grid-column: auto; } }
+  figcaption { padding: 12px 16px 14px; font-weight: 600; }
+
+  /* ---------- слайдер ---------- */
+  .ba {
+    --pos: 50%;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    touch-action: pan-y;
+    background: #ddd;
+  }
+  .ba img { display: block; width: 100%; height: auto; pointer-events: none; }
+  .ba .ba-before {
+    position: absolute; inset: 0; height: 100%; object-fit: cover;
+    clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  }
+  .ba-handle {
+    position: absolute; top: 0; bottom: 0; left: var(--pos);
+    width: 3px; margin-left: -1.5px; background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.35); pointer-events: none;
+  }
+  .ba-handle::after {
+    content: ""; position: absolute; top: 50%; left: 50%;
+    width: 44px; height: 44px; transform: translate(-50%, -50%);
+    border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,.3);
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f7d6d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center / 24px no-repeat;
+  }
+  .ba-label {
+    position: absolute; top: 12px; padding: 4px 10px; border-radius: 999px;
+    background: rgba(0,0,0,.55); color: #fff; font-size: 13px; font-weight: 600;
+    letter-spacing: .02em; pointer-events: none;
+  }
+  .ba-label-before { left: 12px; }
+  .ba-label-after { right: 12px; background: rgba(47,125,109,.9); }
+  .ba-range {
+    position: absolute; inset: 0; width: 100%; height: 100%; margin: 0;
+    opacity: 0; cursor: ew-resize; -webkit-appearance: none; appearance: none;
+  }
+  /* узкий невидимый «бегунок», чтобы клик точно совпадал с позицией шторки */
+  .ba-range::-webkit-slider-thumb { -webkit-appearance: none; width: 2px; height: 100%; }
+  .ba-range::-moz-range-thumb { width: 2px; height: 100%; border: 0; }
+  .ba:has(.ba-range:focus-visible) .ba-handle::after { outline: 3px solid var(--accent, #2f7d6d); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>До и после уборки</h1>
+  <p>Потяните шторку: слева — как было, справа — после нашей работы.</p>
+</header>
+
+<main id="gallery"></main>
+
+<script>
+  // Список пар. Чтобы убрать пару — удалите строку; порядок = порядок на странице.
+  const PAIRS = [
+    { id: "01-living-room",       title: "Гостиная" },
+    { id: "02-oven",              title: "Духовой шкаф", wide: true },
+    { id: "03-bedroom",           title: "Спальня" },
+    { id: "04-kitchen",           title: "Кухня" },
+    { id: "05-bedroom-attic",     title: "Спальня в мансарде" },
+    { id: "06-wc",                title: "Гостевой санузел" },
+    { id: "07-kitchen-sink",      title: "Кухонная мойка" },
+    { id: "08-bedroom-skylights", title: "Спальня с мансардными окнами" },
+    { id: "09-under-sink",        title: "Шкаф под мойкой" },
+    { id: "10-small-bedroom",     title: "Малая спальня" },
+    { id: "11-bathroom-sink",     title: "Раковина в ванной", wide: true },
+    { id: "12-toilet",            title: "Унитаз" },
+    { id: "13-fridge",            title: "Холодильник" },
+    { id: "14-dining",            title: "Столовая" },
+    { id: "15-toilet-2",          title: "Унитаз — ещё один пример" },
+    { id: "16-small-bedroom-2",   title: "Малая спальня, другой ракурс" },
+    { id: "17-dishwasher",        title: "Посудомоечная машина" },
+    { id: "18-hallway",           title: "Прихожая" },
+    { id: "19-bathroom-rack",     title: "Ванная: сушилка и бельё", wide: true },
+    { id: "20-bedroom-blue",      title: "Спальня с голубой стеной" },
+    { id: "21-shower",            title: "Душевая" },
+    { id: "22-sofa-bed",          title: "Диван-кровать в гостиной" },
+    { id: "23-bedroom-crib",      title: "Спальня с детской кроваткой", wide: true },
+    { id: "24-bathroom-towels",   title: "Ванная: полотенца на полу" },
+    { id: "25-bedroom-headboard", title: "Спальня с мягким изголовьем" },
+    { id: "26-shower-room",       title: "Душевая с туалетом" },
+    { id: "27-bedroom-checkered", title: "Спальня с ковром в клетку" },
+    { id: "28-bedroom-windows",   title: "Спальня с двумя окнами", wide: true },
+    { id: "29-bedroom-wood",      title: "Спальня с деревянным изголовьем" },
+    { id: "30-bedroom-window",    title: "Спальня у окна" },
+    { id: "31-bedroom-rug",       title: "Спальня с чёрно-белым ковром" },
+    { id: "32-bedroom-armchair",  title: "Спальня с креслом" },
+    { id: "33-sink-dishes",       title: "Раковина с грязной посудой" },
+    { id: "34-toilet-3",          title: "Унитаз: налёт в чаше" },
+    { id: "35-toilet-4",          title: "Унитаз: жёлтый налёт" },
+    { id: "36-toilet-5",          title: "Подвесной унитаз" },
+    { id: "37-toilet-6",          title: "Унитаз в светлой ванной" },
+    { id: "38-toilet-7",          title: "Подвесной унитаз, крупно" },
+    { id: "39-toilet-8",          title: "Унитаз в серой ванной" },
+    { id: "40-toilet-9",          title: "Унитаз в бежевой ванной" },
+    { id: "41-toilet-10",         title: "Унитаз, вид сверху" },
+    { id: "42-black-sink",        title: "Чёрная мойка: разводы и губка" },
+    { id: "43-bathroom-sink-2",   title: "Раковина в ванной: разводы" },
+    { id: "44-faucet",            title: "Смеситель на раковине" },
+    { id: "45-shower-mixer",      title: "Смеситель в душе: известковый налёт" },
+    { id: "46-bath-faucet",       title: "Смеситель на ванне" },
+    { id: "47-trash-bin",         title: "Мусорное ведро под мойкой" },
+    { id: "48-bathroom-towels-2", title: "Ванная: полотенца на ванне", wide: true },
+    { id: "49-bathroom-laundry",  title: "Ванная: бельё на стиральной машине" },
+    { id: "50-bathroom-ironing",  title: "Ванная с гладильной доской" },
+    { id: "51-bathroom-ironing-2", title: "Ванная с гладильной доской, другая уборка" },
+    { id: "52-shower-towel",      title: "Душ: полотенце на полу" },
+    { id: "53-bedroom-gray",      title: "Спальня с картиной" },
+    { id: "54-bedroom-checkered-2", title: "Спальня с ковром в клетку, другая уборка" },
+    { id: "55-bedroom-checkered-3", title: "Спальня с ковром в клетку, третья уборка" },
+    { id: "56-bedroom-rug-2",     title: "Спальня с чёрно-белым ковром, другая уборка" },
+    { id: "57-bedroom-rug-3",     title: "Спальня с чёрно-белым ковром, третья уборка" },
+    { id: "58-dc-sofa-grey",      title: "Химчистка: серый диван" },
+    { id: "59-dc-recliner",       title: "Химчистка: кресло-реклайнер" },
+    { id: "60-dc-chair-cushions", title: "Химчистка: подушки кресла" },
+    { id: "61-dc-corner-sofa",    title: "Химчистка: светлый угловой диван" },
+    { id: "62-dc-sofa-armrest",   title: "Химчистка: подлокотник дивана с узором", square: true },
+    { id: "63-dc-sofa-seat",      title: "Химчистка: сиденье дивана с узором", square: true },
+    { id: "64-dc-sofa-seat-4",    title: "Химчистка: подушка сиденья с узором", square: true },
+    { id: "65-dc-carpet-1",       title: "Химчистка ковролина в офисе: пятно 1", square: true },
+    { id: "66-dc-carpet-2",       title: "Химчистка ковролина в офисе: пятно 2", square: true },
+    { id: "67-dc-carpet-3",       title: "Химчистка ковролина в офисе: мелкие пятна", square: true },
+    { id: "68-dc-carpet-4",       title: "Химчистка ковролина в офисе: пятно 3", square: true },
+    { id: "69-dc-carpet-5",       title: "Химчистка ковролина в офисе: потёк у стола", square: true },
+    { id: "70-dc-carpet-6",       title: "Химчистка ковролина в офисе: два пятна", square: true },
+    { id: "71-dc-carpet-7",       title: "Химчистка ковролина в офисе: большое пятно", square: true },
+    { id: "72-dc-carpet-8",       title: "Химчистка ковролина в офисе: пятно у розетки", square: true },
+    { id: "73-sink-dishes-2",     title: "Мойка с грязной посудой", wide: true },
+    { id: "74-sink-dishes-3",     title: "Круглая мойка с посудой" },
+    { id: "75-kitchen-dishes",    title: "Кухня: посуда и беспорядок" },
+    { id: "76-kitchen-office",    title: "Офисная кухня" },
+    { id: "77-kitchen-white",     title: "Белая кухня в офисе" },
+    { id: "78-sink-water-spots",  title: "Мойка: известковые разводы" },
+    { id: "79-trash-bin-2",       title: "Мусорная корзина в туалете" },
+    { id: "80-wc-bags",           title: "Туалет: вещи на полу" },
+    { id: "81-bathtub-2",         title: "Ванна", wide: true },
+    { id: "82-shelves",           title: "Полки в шкафу: пыль", square: true },
+    { id: "83-room-messy",        title: "Комната: беспорядок на полу", wide: true },
+    { id: "84-office-boxes",      title: "Офис: коробки и мусор" },
+    { id: "85-office-boxes-2",    title: "Офис после переезда" },
+    { id: "86-office-floor",      title: "Офис: мытьё паркета" },
+    { id: "87-office-floor-2",    title: "Офис: паркет после мытья" },
+    { id: "88-office-desks",      title: "Офис: рабочие столы" },
+    { id: "89-dining-room",       title: "Комната с обеденным столом", wide: true },
+    { id: "90-balcony",           title: "Балкон" },
+    { id: "91-floor-renovation",  title: "Паркет после ремонта", square: true },
+  ];
+
+  const gallery = document.getElementById("gallery");
+  for (const p of PAIRS) {
+    const fig = document.createElement("figure");
+    if (p.wide) fig.className = "wide";
+    // широкие пары горизонтальные (1024×768), квадратные 900×900, остальные вертикальные (768×1024);
+    // размеры заранее резервируют место, чтобы страница не прыгала при подгрузке
+    const [w, h] = p.wide ? [1024, 768] : p.square ? [900, 900] : [768, 1024];
+    fig.innerHTML = `
+      <div class="ba">
+        <img src="images/${p.id}_after.jpg" alt="${p.title} — после уборки" width="${w}" height="${h}" loading="lazy">
+        <img src="images/${p.id}_before.jpg" alt="${p.title} — до уборки" class="ba-before" loading="lazy">
+        <span class="ba-label ba-label-before">До</span>
+        <span class="ba-label ba-label-after">После</span>
+        <span class="ba-handle" aria-hidden="true"></span>
+        <input class="ba-range" type="range" min="0" max="100" value="50" step="0.5" aria-label="${p.title}: сравнение до и после">
+      </div>
+      <figcaption>${parseInt(p.id, 10)}. ${p.title}</figcaption>`;
+    gallery.appendChild(fig);
+  }
+
+  // Логика слайдера: работает для любых .ba на странице
+  document.querySelectorAll(".ba").forEach((ba) => {
+    const range = ba.querySelector(".ba-range");
+    const set = (v) => ba.style.setProperty("--pos", v + "%");
+    range.addEventListener("input", () => set(range.value));
+    set(range.value);
+  });
+</script>
+</body>
+</html>

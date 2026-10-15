@@ -1,0 +1,821 @@
+[
+ {
+  "id": "01-living-room",
+  "title": "Р“РѕСЃС‚РёРЅР°СЏ",
+  "before": "01-living-room_before.jpg",
+  "after": "01-living-room_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164810.jpg",
+  "src_after": "IMG_20260723_214801.jpg"
+ },
+ {
+  "id": "02-oven",
+  "title": "Р”СѓС…РѕРІРѕР№ С€РєР°С„",
+  "before": "02-oven_before.jpg",
+  "after": "02-oven_after.jpg",
+  "orient": "landscape",
+  "src_before": "IMG_1376.JPG",
+  "src_after": "IMG_3939.jpg"
+ },
+ {
+  "id": "03-bedroom",
+  "title": "РЎРїР°Р»СЊРЅСЏ",
+  "before": "03-bedroom_before.jpg",
+  "after": "03-bedroom_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164747.jpg",
+  "src_after": "IMG_20260723_213836 (1).jpg"
+ },
+ {
+  "id": "04-kitchen",
+  "title": "РљСѓС…РЅСЏ",
+  "before": "04-kitchen_before.jpg",
+  "after": "04-kitchen_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_3934 (1).jpg",
+  "src_after": "IMG_3957.jpg"
+ },
+ {
+  "id": "05-bedroom-attic",
+  "title": "РЎРїР°Р»СЊРЅСЏ РІ РјР°РЅСЃР°СЂРґРµ",
+  "before": "05-bedroom-attic_before.jpg",
+  "after": "05-bedroom-attic_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_3926.jpg",
+  "src_after": "IMG_1362.jpg"
+ },
+ {
+  "id": "06-wc",
+  "title": "Р“РѕСЃС‚РµРІРѕР№ СЃР°РЅСѓР·РµР»",
+  "before": "06-wc_before.jpg",
+  "after": "06-wc_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164821.jpg",
+  "src_after": "IMG_20260723_214308.jpg"
+ },
+ {
+  "id": "07-kitchen-sink",
+  "title": "РљСѓС…РѕРЅРЅР°СЏ РјРѕР№РєР°",
+  "before": "07-kitchen-sink_before.jpg",
+  "after": "07-kitchen-sink_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_1339.jpg",
+  "src_after": "IMG_1367 (1).jpg"
+ },
+ {
+  "id": "08-bedroom-skylights",
+  "title": "РЎРїР°Р»СЊРЅСЏ СЃ РјР°РЅСЃР°СЂРґРЅС‹РјРё РѕРєРЅР°РјРё",
+  "before": "08-bedroom-skylights_before.jpg",
+  "after": "08-bedroom-skylights_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164756.jpg",
+  "src_after": "IMG_20260723_213947 (1).jpg"
+ },
+ {
+  "id": "09-under-sink",
+  "title": "РЁРєР°С„ РїРѕРґ РјРѕР№РєРѕР№",
+  "before": "09-under-sink_before.jpg",
+  "after": "09-under-sink_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_1364.jpg",
+  "src_after": "IMG_1366 (1).jpg"
+ },
+ {
+  "id": "10-small-bedroom",
+  "title": "РњР°Р»Р°СЏ СЃРїР°Р»СЊРЅСЏ",
+  "before": "10-small-bedroom_before.jpg",
+  "after": "10-small-bedroom_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_165313.jpg",
+  "src_after": "IMG_20260723_213946.jpg"
+ },
+ {
+  "id": "11-bathroom-sink",
+  "title": "Р Р°РєРѕРІРёРЅР° РІ РІР°РЅРЅРѕР№",
+  "before": "11-bathroom-sink_before.jpg",
+  "after": "11-bathroom-sink_after.jpg",
+  "orient": "landscape",
+  "src_before": "IMG_3930 (1).jpg",
+  "src_after": "IMG_3946 (1).jpg"
+ },
+ {
+  "id": "12-toilet",
+  "title": "РЈРЅРёС‚Р°Р·",
+  "before": "12-toilet_before.jpg",
+  "after": "12-toilet_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_3931 (1).jpg",
+  "src_after": "IMG_3953 (1).jpg"
+ },
+ {
+  "id": "13-fridge",
+  "title": "РҐРѕР»РѕРґРёР»СЊРЅРёРє",
+  "before": "13-fridge_before.jpg",
+  "after": "13-fridge_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164905 (1).jpg",
+  "src_after": "IMG_20260723_213628.jpg"
+ },
+ {
+  "id": "14-dining",
+  "title": "РЎС‚РѕР»РѕРІР°СЏ",
+  "before": "14-dining_before.jpg",
+  "after": "14-dining_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_165048.jpg",
+  "src_after": "IMG_20260723_214140.jpg"
+ },
+ {
+  "id": "15-toilet-2",
+  "title": "РЈРЅРёС‚Р°Р· вЂ” РµС‰С‘ РѕРґРёРЅ РїСЂРёРјРµСЂ",
+  "before": "15-toilet-2_before.jpg",
+  "after": "15-toilet-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_1019.jpg",
+  "src_after": "IMG_1040.jpg"
+ },
+ {
+  "id": "16-small-bedroom-2",
+  "title": "РњР°Р»Р°СЏ СЃРїР°Р»СЊРЅСЏ, РґСЂСѓРіРѕР№ СЂР°РєСѓСЂСЃ",
+  "before": "16-small-bedroom-2_before.jpg",
+  "after": "16-small-bedroom-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_20260723_164739.jpg",
+  "src_after": "IMG_20260723_213814 (1).jpg"
+ },
+ {
+  "id": "17-dishwasher",
+  "title": "РџРѕСЃСѓРґРѕРјРѕРµС‡РЅР°СЏ РјР°С€РёРЅР°",
+  "before": "17-dishwasher_before.jpg",
+  "after": "17-dishwasher_after.jpg",
+  "orient": "portrait",
+  "src_before": "IMG_1017.jpg",
+  "src_after": "IMG_1372 (1).jpg"
+ },
+ {
+  "id": "18-hallway",
+  "title": "Прихожая",
+  "before": "18-hallway_before.jpg",
+  "after": "18-hallway_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6817.jpg",
+  "src_after": "apartments/IMG_6835.jpg"
+ },
+ {
+  "id": "19-bathroom-rack",
+  "title": "Ванная: сушилка и бельё",
+  "before": "19-bathroom-rack_before.jpg",
+  "after": "19-bathroom-rack_after.jpg",
+  "orient": "landscape",
+  "src_before": "apartments/IMG_6942.jpg",
+  "src_after": "apartments/IMG_6955.jpg"
+ },
+ {
+  "id": "20-bedroom-blue",
+  "title": "Спальня с голубой стеной",
+  "before": "20-bedroom-blue_before.jpg",
+  "after": "20-bedroom-blue_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6818.jpg",
+  "src_after": "apartments/IMG_6820.jpg"
+ },
+ {
+  "id": "21-shower",
+  "title": "Душевая",
+  "before": "21-shower_before.jpg",
+  "after": "21-shower_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6329.jpg",
+  "src_after": "apartments/IMG_6358.jpg"
+ },
+ {
+  "id": "22-sofa-bed",
+  "title": "Диван-кровать в гостиной",
+  "before": "22-sofa-bed_before.jpg",
+  "after": "22-sofa-bed_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6881 (1).jpg",
+  "src_after": "apartments/IMG_6888.jpg"
+ },
+ {
+  "id": "23-bedroom-crib",
+  "title": "Спальня с детской кроваткой",
+  "before": "23-bedroom-crib_before.jpg",
+  "after": "23-bedroom-crib_after.jpg",
+  "orient": "landscape",
+  "src_before": "apartments/IMG_6248.jpg",
+  "src_after": "apartments/IMG_6269.jpg"
+ },
+ {
+  "id": "24-bathroom-towels",
+  "title": "Ванная: полотенца на полу",
+  "before": "24-bathroom-towels_before.jpg",
+  "after": "24-bathroom-towels_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6506.jpg",
+  "src_after": "apartments/IMG_6541.jpg"
+ },
+ {
+  "id": "25-bedroom-headboard",
+  "title": "Спальня с мягким изголовьем",
+  "before": "25-bedroom-headboard_before.jpg",
+  "after": "25-bedroom-headboard_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6938.jpg",
+  "src_after": "apartments/IMG_6959.jpg"
+ },
+ {
+  "id": "26-shower-room",
+  "title": "Душевая с туалетом",
+  "before": "26-shower-room_before.jpg",
+  "after": "26-shower-room_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6841.jpg",
+  "src_after": "apartments/IMG_6864.jpg"
+ },
+ {
+  "id": "27-bedroom-checkered",
+  "title": "Спальня с ковром в клетку",
+  "before": "27-bedroom-checkered_before.jpg",
+  "after": "27-bedroom-checkered_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7133.jpg",
+  "src_after": "apartments/IMG_7149.jpg"
+ },
+ {
+  "id": "28-bedroom-windows",
+  "title": "Спальня с двумя окнами",
+  "before": "28-bedroom-windows_before.jpg",
+  "after": "28-bedroom-windows_after.jpg",
+  "orient": "landscape",
+  "src_before": "apartments/IMG_6292.jpg",
+  "src_after": "apartments/IMG_6304.jpg"
+ },
+ {
+  "id": "29-bedroom-wood",
+  "title": "Спальня с деревянным изголовьем",
+  "before": "29-bedroom-wood_before.jpg",
+  "after": "29-bedroom-wood_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6840.jpg",
+  "src_after": "apartments/IMG_6860.jpg"
+ },
+ {
+  "id": "30-bedroom-window",
+  "title": "Спальня у окна",
+  "before": "30-bedroom-window_before.jpg",
+  "after": "30-bedroom-window_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6296.jpg",
+  "src_after": "apartments/IMG_6318.jpg"
+ },
+ {
+  "id": "31-bedroom-rug",
+  "title": "Спальня с чёрно-белым ковром",
+  "before": "31-bedroom-rug_before.jpg",
+  "after": "31-bedroom-rug_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6504.jpg",
+  "src_after": "apartments/IMG_6543.jpg"
+ },
+ {
+  "id": "32-bedroom-armchair",
+  "title": "Спальня с креслом",
+  "before": "32-bedroom-armchair_before.jpg",
+  "after": "32-bedroom-armchair_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6969.jpg",
+  "src_after": "apartments/IMG_6998.jpg"
+ },
+ {
+  "id": "33-sink-dishes",
+  "title": "Раковина с грязной посудой",
+  "before": "33-sink-dishes_before.jpg",
+  "after": "33-sink-dishes_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6906.jpg",
+  "src_after": "apartments/IMG_6913.jpg"
+ },
+ {
+  "id": "34-toilet-3",
+  "title": "Унитаз: налёт в чаше",
+  "before": "34-toilet-3_before.jpg",
+  "after": "34-toilet-3_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6875.jpg",
+  "src_after": "apartments/IMG_6891.jpg"
+ },
+ {
+  "id": "35-toilet-4",
+  "title": "Унитаз: жёлтый налёт",
+  "before": "35-toilet-4_before.jpg",
+  "after": "35-toilet-4_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7127.jpg",
+  "src_after": "apartments/IMG_7150.jpg"
+ },
+ {
+  "id": "36-toilet-5",
+  "title": "Подвесной унитаз",
+  "before": "36-toilet-5_before.jpg",
+  "after": "36-toilet-5_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7130.jpg",
+  "src_after": "apartments/IMG_7147.jpg"
+ },
+ {
+  "id": "37-toilet-6",
+  "title": "Унитаз в светлой ванной",
+  "before": "37-toilet-6_before.jpg",
+  "after": "37-toilet-6_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6940.jpg",
+  "src_after": "apartments/IMG_6957.jpg"
+ },
+ {
+  "id": "38-toilet-7",
+  "title": "Подвесной унитаз, крупно",
+  "before": "38-toilet-7_before.jpg",
+  "after": "38-toilet-7_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7123.jpg",
+  "src_after": "apartments/IMG_7161.jpg"
+ },
+ {
+  "id": "39-toilet-8",
+  "title": "Унитаз в серой ванной",
+  "before": "39-toilet-8_before.jpg",
+  "after": "39-toilet-8_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_9931.jpg",
+  "src_after": "apartments/IMG_9964.jpg"
+ },
+ {
+  "id": "40-toilet-9",
+  "title": "Унитаз в бежевой ванной",
+  "before": "40-toilet-9_before.jpg",
+  "after": "40-toilet-9_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6814.jpg",
+  "src_after": "apartments/IMG_6832.jpg"
+ },
+ {
+  "id": "41-toilet-10",
+  "title": "Унитаз, вид сверху",
+  "before": "41-toilet-10_before.jpg",
+  "after": "41-toilet-10_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6880.jpg",
+  "src_after": "apartments/IMG_6886.jpg"
+ },
+ {
+  "id": "42-black-sink",
+  "title": "Чёрная мойка: разводы и губка",
+  "before": "42-black-sink_before.jpg",
+  "after": "42-black-sink_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6492.jpg",
+  "src_after": "apartments/IMG_6546.jpg"
+ },
+ {
+  "id": "43-bathroom-sink-2",
+  "title": "Раковина в ванной: разводы",
+  "before": "43-bathroom-sink-2_before.jpg",
+  "after": "43-bathroom-sink-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6815.jpg",
+  "src_after": "apartments/IMG_6829.jpg"
+ },
+ {
+  "id": "44-faucet",
+  "title": "Смеситель на раковине",
+  "before": "44-faucet_before.jpg",
+  "after": "44-faucet_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6941.jpg",
+  "src_after": "apartments/IMG_6956.jpg"
+ },
+ {
+  "id": "45-shower-mixer",
+  "title": "Смеситель в душе: известковый налёт",
+  "before": "45-shower-mixer_before.jpg",
+  "after": "45-shower-mixer_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6501.jpg",
+  "src_after": "apartments/IMG_6524.jpg"
+ },
+ {
+  "id": "46-bath-faucet",
+  "title": "Смеситель на ванне",
+  "before": "46-bath-faucet_before.jpg",
+  "after": "46-bath-faucet_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6944.jpg",
+  "src_after": "apartments/IMG_6952.jpg"
+ },
+ {
+  "id": "47-trash-bin",
+  "title": "Мусорное ведро под мойкой",
+  "before": "47-trash-bin_before.jpg",
+  "after": "47-trash-bin_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6868.jpg",
+  "src_after": "apartments/IMG_6896.jpg"
+ },
+ {
+  "id": "48-bathroom-towels-2",
+  "title": "Ванная: полотенца на ванне",
+  "before": "48-bathroom-towels-2_before.jpg",
+  "after": "48-bathroom-towels-2_after.jpg",
+  "orient": "landscape",
+  "src_before": "apartments/IMG_6293.jpg",
+  "src_after": "apartments/IMG_6328 (1).JPG"
+ },
+ {
+  "id": "49-bathroom-laundry",
+  "title": "Ванная: бельё на стиральной машине",
+  "before": "49-bathroom-laundry_before.jpg",
+  "after": "49-bathroom-laundry_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6265.jpg",
+  "src_after": "apartments/IMG_6280.jpg"
+ },
+ {
+  "id": "50-bathroom-ironing",
+  "title": "Ванная с гладильной доской",
+  "before": "50-bathroom-ironing_before.jpg",
+  "after": "50-bathroom-ironing_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7129.jpg",
+  "src_after": "apartments/IMG_7148.jpg"
+ },
+ {
+  "id": "51-bathroom-ironing-2",
+  "title": "Ванная с гладильной доской, другая уборка",
+  "before": "51-bathroom-ironing-2_before.jpg",
+  "after": "51-bathroom-ironing-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_9937.jpg",
+  "src_after": "apartments/IMG_9955.jpg"
+ },
+ {
+  "id": "52-shower-towel",
+  "title": "Душ: полотенце на полу",
+  "before": "52-shower-towel_before.jpg",
+  "after": "52-shower-towel_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_9930.jpg",
+  "src_after": "apartments/IMG_9965.jpg"
+ },
+ {
+  "id": "53-bedroom-gray",
+  "title": "Спальня с картиной",
+  "before": "53-bedroom-gray_before.jpg",
+  "after": "53-bedroom-gray_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6334.jpg",
+  "src_after": "apartments/IMG_6341.jpg"
+ },
+ {
+  "id": "54-bedroom-checkered-2",
+  "title": "Спальня с ковром в клетку, другая уборка",
+  "before": "54-bedroom-checkered-2_before.jpg",
+  "after": "54-bedroom-checkered-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_6502.jpg",
+  "src_after": "apartments/IMG_6530.jpg"
+ },
+ {
+  "id": "55-bedroom-checkered-3",
+  "title": "Спальня с ковром в клетку, третья уборка",
+  "before": "55-bedroom-checkered-3_before.jpg",
+  "after": "55-bedroom-checkered-3_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_9940.jpg",
+  "src_after": "apartments/IMG_9959.jpg"
+ },
+ {
+  "id": "56-bedroom-rug-2",
+  "title": "Спальня с чёрно-белым ковром, другая уборка",
+  "before": "56-bedroom-rug-2_before.jpg",
+  "after": "56-bedroom-rug-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_7120.jpg",
+  "src_after": "apartments/IMG_7165.jpg"
+ },
+ {
+  "id": "57-bedroom-rug-3",
+  "title": "Спальня с чёрно-белым ковром, третья уборка",
+  "before": "57-bedroom-rug-3_before.jpg",
+  "after": "57-bedroom-rug-3_after.jpg",
+  "orient": "portrait",
+  "src_before": "apartments/IMG_9926.jpg",
+  "src_after": "apartments/IMG_9961.jpg"
+ },
+ {
+  "id": "58-dc-sofa-grey",
+  "title": "Химчистка: серый диван",
+  "before": "58-dc-sofa-grey_before.jpg",
+  "after": "58-dc-sofa-grey_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_8915.jpg",
+  "src_after": "batch 3/IMG_8922.jpg"
+ },
+ {
+  "id": "59-dc-recliner",
+  "title": "Химчистка: кресло-реклайнер",
+  "before": "59-dc-recliner_before.jpg",
+  "after": "59-dc-recliner_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_8916 (1).jpg",
+  "src_after": "batch 3/IMG_8921.jpg"
+ },
+ {
+  "id": "60-dc-chair-cushions",
+  "title": "Химчистка: подушки кресла",
+  "before": "60-dc-chair-cushions_before.jpg",
+  "after": "60-dc-chair-cushions_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_8917.jpg",
+  "src_after": "batch 3/IMG_8923.jpg"
+ },
+ {
+  "id": "61-dc-corner-sofa",
+  "title": "Химчистка: светлый угловой диван",
+  "before": "61-dc-corner-sofa_before.jpg",
+  "after": "61-dc-corner-sofa_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20260816_095824.jpg",
+  "src_after": "batch 3/20260816_111505.jpg"
+ },
+ {
+  "id": "62-dc-sofa-armrest",
+  "title": "Химчистка: подлокотник дивана с узором",
+  "before": "62-dc-sofa-armrest_before.jpg",
+  "after": "62-dc-sofa-armrest_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_5929.jpg",
+  "src_after": "batch 3/IMG_5937.jpg"
+ },
+ {
+  "id": "63-dc-sofa-seat",
+  "title": "Химчистка: сиденье дивана с узором",
+  "before": "63-dc-sofa-seat_before.jpg",
+  "after": "63-dc-sofa-seat_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_5931.jpg",
+  "src_after": "batch 3/IMG_5939.jpg"
+ },
+ {
+  "id": "64-dc-sofa-seat-4",
+  "title": "Химчистка: подушка сиденья с узором",
+  "before": "64-dc-sofa-seat-4_before.jpg",
+  "after": "64-dc-sofa-seat-4_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_5934.jpg",
+  "src_after": "batch 3/IMG_5942.jpg"
+ },
+ {
+  "id": "65-dc-carpet-1",
+  "title": "Химчистка ковролина в офисе: пятно 1",
+  "before": "65-dc-carpet-1_before.jpg",
+  "after": "65-dc-carpet-1_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4703.jpg",
+  "src_after": "batch 3/IMG_4718.jpg"
+ },
+ {
+  "id": "66-dc-carpet-2",
+  "title": "Химчистка ковролина в офисе: пятно 2",
+  "before": "66-dc-carpet-2_before.jpg",
+  "after": "66-dc-carpet-2_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4704.jpg",
+  "src_after": "batch 3/IMG_4720.jpg"
+ },
+ {
+  "id": "67-dc-carpet-3",
+  "title": "Химчистка ковролина в офисе: мелкие пятна",
+  "before": "67-dc-carpet-3_before.jpg",
+  "after": "67-dc-carpet-3_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4705.jpg",
+  "src_after": "batch 3/IMG_4720.jpg"
+ },
+ {
+  "id": "68-dc-carpet-4",
+  "title": "Химчистка ковролина в офисе: пятно 3",
+  "before": "68-dc-carpet-4_before.jpg",
+  "after": "68-dc-carpet-4_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4706.jpg",
+  "src_after": "batch 3/IMG_4721.jpg"
+ },
+ {
+  "id": "69-dc-carpet-5",
+  "title": "Химчистка ковролина в офисе: потёк у стола",
+  "before": "69-dc-carpet-5_before.jpg",
+  "after": "69-dc-carpet-5_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4707.jpg",
+  "src_after": "batch 3/IMG_4724.jpg"
+ },
+ {
+  "id": "70-dc-carpet-6",
+  "title": "Химчистка ковролина в офисе: два пятна",
+  "before": "70-dc-carpet-6_before.jpg",
+  "after": "70-dc-carpet-6_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4708.jpg",
+  "src_after": "batch 3/IMG_4723.jpg"
+ },
+ {
+  "id": "71-dc-carpet-7",
+  "title": "Химчистка ковролина в офисе: большое пятно",
+  "before": "71-dc-carpet-7_before.jpg",
+  "after": "71-dc-carpet-7_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4709.jpg",
+  "src_after": "batch 3/IMG_4717.jpg"
+ },
+ {
+  "id": "72-dc-carpet-8",
+  "title": "Химчистка ковролина в офисе: пятно у розетки",
+  "before": "72-dc-carpet-8_before.jpg",
+  "after": "72-dc-carpet-8_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_4710.jpg",
+  "src_after": "batch 3/IMG_4716.jpg"
+ },
+ {
+  "id": "73-sink-dishes-2",
+  "title": "Мойка с грязной посудой",
+  "before": "73-sink-dishes-2_before.jpg",
+  "after": "73-sink-dishes-2_after.jpg",
+  "orient": "landscape",
+  "src_before": "batch 3/IMG_3961.jpg",
+  "src_after": "batch 3/IMG_4006.jpg"
+ },
+ {
+  "id": "74-sink-dishes-3",
+  "title": "Круглая мойка с посудой",
+  "before": "74-sink-dishes-3_before.jpg",
+  "after": "74-sink-dishes-3_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_1074.jpg",
+  "src_after": "batch 3/IMG_1102.jpg"
+ },
+ {
+  "id": "75-kitchen-dishes",
+  "title": "Кухня: посуда и беспорядок",
+  "before": "75-kitchen-dishes_before.jpg",
+  "after": "75-kitchen-dishes_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_3982 (1).jpg",
+  "src_after": "batch 3/IMG_4008 (1).jpg"
+ },
+ {
+  "id": "76-kitchen-office",
+  "title": "Офисная кухня",
+  "before": "76-kitchen-office_before.jpg",
+  "after": "76-kitchen-office_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/MVIMG_20261002_145113.jpg",
+  "src_after": "batch 3/MVIMG_20261002_185313.jpg"
+ },
+ {
+  "id": "77-kitchen-white",
+  "title": "Белая кухня в офисе",
+  "before": "77-kitchen-white_before.jpg",
+  "after": "77-kitchen-white_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261010_140934.jpg",
+  "src_after": "batch 3/20261010_151916 (1).jpg"
+ },
+ {
+  "id": "78-sink-water-spots",
+  "title": "Мойка: известковые разводы",
+  "before": "78-sink-water-spots_before.jpg",
+  "after": "78-sink-water-spots_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261010_151434 (1).jpg",
+  "src_after": "batch 3/20261010_151449 (1).jpg"
+ },
+ {
+  "id": "79-trash-bin-2",
+  "title": "Мусорная корзина в туалете",
+  "before": "79-trash-bin-2_before.jpg",
+  "after": "79-trash-bin-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_0467.jpg",
+  "src_after": "batch 3/IMG_0468.jpg"
+ },
+ {
+  "id": "80-wc-bags",
+  "title": "Туалет: вещи на полу",
+  "before": "80-wc-bags_before.jpg",
+  "after": "80-wc-bags_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/IMG_3985 (1).jpg",
+  "src_after": "batch 3/IMG_3999 (1).jpg"
+ },
+ {
+  "id": "81-bathtub-2",
+  "title": "Ванна",
+  "before": "81-bathtub-2_before.jpg",
+  "after": "81-bathtub-2_after.jpg",
+  "orient": "landscape",
+  "src_before": "batch 3/IMG_6195.jpg",
+  "src_after": "batch 3/IMG_6201.jpg"
+ },
+ {
+  "id": "82-shelves",
+  "title": "Полки в шкафу: пыль",
+  "before": "82-shelves_before.jpg",
+  "after": "82-shelves_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_5359.jpg",
+  "src_after": "batch 3/IMG_5397.jpg"
+ },
+ {
+  "id": "83-room-messy",
+  "title": "Комната: беспорядок на полу",
+  "before": "83-room-messy_before.jpg",
+  "after": "83-room-messy_after.jpg",
+  "orient": "landscape",
+  "src_before": "batch 3/IMG_20260806_130356.jpg",
+  "src_after": "batch 3/IMG_20260806_165956.jpg"
+ },
+ {
+  "id": "84-office-boxes",
+  "title": "Офис: коробки и мусор",
+  "before": "84-office-boxes_before.jpg",
+  "after": "84-office-boxes_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261002_145009.jpg",
+  "src_after": "batch 3/20261002_161353.jpg"
+ },
+ {
+  "id": "85-office-boxes-2",
+  "title": "Офис после переезда",
+  "before": "85-office-boxes-2_before.jpg",
+  "after": "85-office-boxes-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261002_145018.jpg",
+  "src_after": "batch 3/20261002_161402.jpg"
+ },
+ {
+  "id": "86-office-floor",
+  "title": "Офис: мытьё паркета",
+  "before": "86-office-floor_before.jpg",
+  "after": "86-office-floor_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261002_175218.jpg",
+  "src_after": "batch 3/20261002_175228.jpg"
+ },
+ {
+  "id": "87-office-floor-2",
+  "title": "Офис: паркет после мытья",
+  "before": "87-office-floor-2_before.jpg",
+  "after": "87-office-floor-2_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261002_195558.jpg",
+  "src_after": "batch 3/20261002_195936.jpg"
+ },
+ {
+  "id": "88-office-desks",
+  "title": "Офис: рабочие столы",
+  "before": "88-office-desks_before.jpg",
+  "after": "88-office-desks_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/MVIMG_20261002_190948.jpg",
+  "src_after": "batch 3/MVIMG_20261002_200230.jpg"
+ },
+ {
+  "id": "89-dining-room",
+  "title": "Комната с обеденным столом",
+  "before": "89-dining-room_before.jpg",
+  "after": "89-dining-room_after.jpg",
+  "orient": "landscape",
+  "src_before": "batch 3/IMG_0480.jpg",
+  "src_after": "batch 3/IMG_0485.jpg"
+ },
+ {
+  "id": "90-balcony",
+  "title": "Балкон",
+  "before": "90-balcony_before.jpg",
+  "after": "90-balcony_after.jpg",
+  "orient": "portrait",
+  "src_before": "batch 3/20261002_182705.jpg",
+  "src_after": "batch 3/20261002_183356.jpg"
+ },
+ {
+  "id": "91-floor-renovation",
+  "title": "Паркет после ремонта",
+  "before": "91-floor-renovation_before.jpg",
+  "after": "91-floor-renovation_after.jpg",
+  "orient": "square",
+  "src_before": "batch 3/IMG_5098.jpg",
+  "src_after": "batch 3/IMG_5103.jpg"
+ }
+]
